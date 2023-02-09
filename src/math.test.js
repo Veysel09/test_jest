@@ -42,7 +42,13 @@ describe("celsiusToFahrenheit", () => {
   });
 });
 describe("fahrenheitToCelsius", () => {
-  //
+  it("should exist", () => {
+    expect(fahrenheitToCelsius).toBeDefined();
+  });
+
+  it("should convert 32F to 0C", () => {
+    expect(fahrenheitToCelsius(32)).toBe(0);
+  });
 });
 describe("fibonacci", () => {
   //
