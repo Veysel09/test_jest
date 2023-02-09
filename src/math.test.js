@@ -29,7 +29,17 @@ describe("calculateTotal", () => {
   });
 });
 describe("celsiusToFahrenheit", () => {
-  ///
+  it("should exist", () => {
+    expect(celsiusToFahrenheit).toBeDefined();
+  });
+
+  it("should return a number", () => {
+    expect(celsiusToFahrenheit(10)).toBe(50);
+  });
+
+  it("should convert 20 C to 68 F", () => {
+    expect(celsiusToFahrenheit(20)).toBe(68);
+  });
 });
 describe("fahrenheitToCelsius", () => {
   //
